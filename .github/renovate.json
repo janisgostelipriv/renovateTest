@@ -1,0 +1,24 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "📦 Dependency Dashboard",
+  "labels": ["dependencies", "renovate"],
+  "timezone": "Europe/Zurich",
+  "schedule": ["after 9am and before 6pm on monday to friday"],
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "packageRules": [
+    {
+      "matchManagers": ["nuget"],
+      "rangeStrategy": "auto",
+      "separateMajorMinor": true,
+      "labels": ["nuget"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ]
+}
