@@ -3,6 +3,7 @@
   "extends": ["config:recommended"],
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "📦 Dependency Dashboard",
+  "dependencyDashboardApproval": true,
   "labels": ["dependencies", "renovate"],
   "timezone": "Europe/Zurich",
   "schedule": ["after 9am and before 6pm on monday to friday"],
